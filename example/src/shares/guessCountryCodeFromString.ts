@@ -1,4 +1,4 @@
-import { CountryCode, isCountryCode } from "../types/isCountry"
+import { CountryCode, isCountryCode } from "../types/isCountryCode"
 
 
 

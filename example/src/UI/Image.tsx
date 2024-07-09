@@ -1,8 +1,6 @@
 import React from "react"
 import { ReactElement } from "react"
 
-import countryList from "../types/countryList"
-
 import isCountrySupported from "../shares/isCountrySupported"
 import getCurrencyCodeToCountryCode from "../shares/getCountryCodeFromCurrencyCode"
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { FlagStyle } from './types/types'
 import Image from './UI/Image'
 
 const App = () => {
@@ -8,8 +9,8 @@ const App = () => {
     <>
       <div>
         <Image 
-          country='FR'
-          style='flat'
+          country='EUR'
+          style={FlagStyle.BLUR}
           size='64'
         />
       </div>

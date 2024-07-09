@@ -1,7 +1,8 @@
-
-
 export enum FlagStyle  {
-    FLAT = 'flat',
-    SHINY = 'shiny',
-    FLAT_CURVED = 'flat'    
+    CURVED = 'curved',
+    BLACK_AND_WHITE = 'black_and_white',
+    REVERSE = 'reverse',
+    SHADOW = 'shadow',
+    SEPIA = 'sepia',
+    BLUR = 'blur'
 }

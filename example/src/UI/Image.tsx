@@ -1,9 +1,8 @@
 import React from "react"
 import { ReactElement } from "react"
-import guessCountryFromCurency from "../shares/guessCountryFromCurency"
 
-import { isCurrency } from "../types/isCurrency"
-import countryList from "../types/countryList"
+import isCountrySupported from "../shares/isCountrySupported"
+import getCurrencyCodeToCountryCode from "../shares/getCountryCodeFromCurrencyCode"
 
 
 type IProps = {
@@ -16,11 +15,11 @@ const Image = ({country, size, style}: IProps): ReactElement => {
     let countryCode = null
 
     // Firstly we check if it is a country code
-    if (countryList.includes(country)) {
+    if (isCountrySupported(country)) {
         countryCode = country;
     } // If it is not a country code, we check if it is a currency code
-    else if (isCurrency(country)) {
-        countryCode = guessCountryFromCurency(country)?? null
+    else if (getCurrencyCodeToCountryCode(country)) {
+        countryCode = getCurrencyCodeToCountryCode(country);
     } else {
         return (<>
             <div>Country not found</div>

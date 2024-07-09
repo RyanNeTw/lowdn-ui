@@ -26,7 +26,7 @@ const Image = ({country, size, style}: IProps): ReactElement => {
     return (
         <>
             <img 
-                src={`https://flagsapi.com/${countryCode}/${style}/${size}.png`} 
+                src={`/flags/${countryCode}.svg`}
             />
         </>
     )

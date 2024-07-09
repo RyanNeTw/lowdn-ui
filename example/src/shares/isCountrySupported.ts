@@ -1,8 +1,8 @@
 import countryList from "../types/countryList"
 
 
-const isCountrySupported = (input: string): string | null => {
-    return countryList[input]
+const isCountrySupported = (input: string): boolean => {
+    return countryList.includes(input);
 }
 
 export default isCountrySupported

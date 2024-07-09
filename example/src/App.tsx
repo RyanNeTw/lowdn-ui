@@ -8,7 +8,7 @@ const App = () => {
     <>
       <div>
         <Image 
-          country='BE'
+          country='GBP'
           style='flat'
           size='64'
         />

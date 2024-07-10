@@ -4,12 +4,18 @@ import getCountryCodeFromCurrencyCode from '../shares/getCountryCodeFromCurrency
 import isCountrySupported from '../shares/isCountrySupported'
 import { FlagStyle } from '../types/types'
 
-type IProps = {
+export type IProps = {
   country: string
   style?: FlagStyle
   size: string
 }
 
+/**
+ * Image component that renders the flag of a country based on the country code or currency code.
+ * @param {string} country - Country code or currency code
+ * @param {FlagStyle} style - Style of the flag
+ * @param {string} size - Size of the flag
+ */
 const Image = ({ country, size, style }: IProps) => {
   let countryCode = null
 

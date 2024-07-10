@@ -3,18 +3,10 @@ import { FlagStyle } from './types/types'
 import Image from './UI/Image'
 
 const App = () => {
-
-  
   return (
-    <>
-      <div>
-        <Image 
-          country='EUR'
-          style={FlagStyle.BLUR}
-          size='64'
-        />
-      </div>
-    </>
+    <div>
+      <Image country='EUR' style={FlagStyle.BLUR} size='64' />
+    </div>
   )
 }
 

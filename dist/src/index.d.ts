@@ -1,6 +1,2 @@
-import * as React from 'react';
-interface Props {
-    text: string;
-}
-export declare const ExampleComponent: ({ text }: Props) => React.JSX.Element;
-export {};
+import './index.css';
+//# sourceMappingURL=index.d.ts.map
